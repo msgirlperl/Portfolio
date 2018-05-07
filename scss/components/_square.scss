@@ -1,0 +1,58 @@
+.squareItem {
+	margin-top: 30px;
+    position: relative;
+}
+
+.squareInnerContainer{
+
+	&:before, 
+	&:after {
+		content: '';
+		position:absolute;
+		top:0px;
+		width:30%;
+		border-bottom: 2px solid #444;
+	}
+
+	&:before {
+		right:0px;
+	}
+
+	&:after {
+		left:0px;
+	}
+
+	position: relative;
+	padding: 50px 15px 35px;
+	text-align: center;
+	border: 2px solid #444;	
+	border-top: none;
+}
+
+
+.squareContent {
+	h2 {
+		font-size: 56px;
+		margin-bottom: 10px;
+		font-weight:400;
+		color: $salmon; 
+	}
+
+	h3 {
+		font-size: 13px;
+		font-weight: 600;
+		margin: 0;
+	}
+}
+	
+
+.squareIcon {
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    width: 40%;
+    height: 60px;
+    font-size: 45px;
+    margin-left: -20%;
+    color: #444;
+}
