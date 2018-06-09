@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
@@ -40,22 +41,23 @@
 
 		<div class="container">
 			<div class="row">
-			
+
 				<div class="col-md-5">
 					<img class="aboutImage" src="images/mir.jpg">
 				</div>
 				<div class="col-md-7">
 					<h4>My name is Miriam Speert Crowley</h4>
 					<p>Hi there!</p>
-					<p>I graduated...</p>
-				</div>	
-			</div>		
+					<p>... more to come..</p>
+
+				</div>
+			</div>
 		</div>
-		
-		
+
+
 	</div>
 
-	<div id="skills" class="skillsSection section">
+	<div id="skills" class="skillsSection section" style="display:none">
 
 		<div class="container">
 			<div class="row">
@@ -64,7 +66,7 @@
 					<p>A representation of my proficiency in various skills</p>
 				</div>
 
-				
+
 				<div class="owl-carousel owl-theme">
 					<div class="skill">
 						<span class="chart" data-percent="67">
@@ -116,10 +118,10 @@
 					</div>
 				</div>
 
-			</div>		
+			</div>
 		</div>
-		
-		
+
+
 	</div>
 
 	<div id="stats" class="statsSection section">
@@ -138,7 +140,7 @@
 							</div>
 						</div>
 					</div>
-				</div>	
+				</div>
 
 				<div class="col-md-3 col-sm-6">
 					<div class="squareItem">
@@ -152,7 +154,7 @@
 							</div>
 						</div>
 					</div>
-				</div>		
+				</div>
 
 				<div class="col-md-3 col-sm-6">
 					<div class="squareItem">
@@ -166,7 +168,7 @@
 							</div>
 						</div>
 					</div>
-				</div>	
+				</div>
 
 				<div class="col-md-3 col-sm-6">
 					<div class="squareItem">
@@ -180,12 +182,12 @@
 							</div>
 						</div>
 					</div>
-				</div>		
+				</div>
 
-			</div>		
+			</div>
 		</div>
-		
-		
+
+
 	</div>
 
 	<div id="contact" class="contactSection section">
@@ -201,35 +203,223 @@
 
 		<div class="container">
 			<div class="row">
-			
+
 				<div class="heading">
 					<h2>PORTFOLIO</h2>
 				</div>
 
 				<div class="filter">
 					<ul id="filters">
-						<li><a href="#" data-filter="*" class="current">ALL</a></li>						
-						<li><a href="#" data-filter=".apps">Apps</a></li>	
-						<li><a href="#" data-filter=".me">Me</a></li>	
-						<li><a href="#" data-filter=".websites">Websites</a></li>	
+						<li><a href="#" data-filter="*" class="current">ALL</a></li>
+						<li><a href="#" data-filter=".apps">Apps</a></li>
+						<li><a href="#about" data-filter=".me">Me</a></li>
+						<li><a href="#" data-filter=".websites">Websites</a></li>
 					</ul>
 				</div>
 
 				<div class="itemsContainer">
 					<ul class="items">
-						<li class=apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
-							
+						<li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
 							<div class="item">
-								<img src="img/portfolio/thumbnails/dog-square.jpeg">
+								<img src="images/portfolio/thumbnails/todoList_Cropped.png" />
+
+								<div class="icons">
+									<a href="images/portfolio/todoList.png" title="View image" class="openButton" data-fancybox data-caption="This is a coding challenge I did (and played around with React)">
+										<i class="fa fa-search"></i>
+									</a>
+									<a href="" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+
+								<div class="imageOverlay"></div>
 							</div>
 						</li>
+
+						<li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							<div class="item">
+								<img src="images/portfolio/thumbnails/todoList_Cropped.png" />
+
+								<div class="icons">
+									<a href="images/portfolio/todoList.png" title="View image" class="openButton" data-fancybox data-caption="This is a coding challenge I did (and played around with React)">
+										<i class="fa fa-search"></i>
+									</a>
+									<a href="" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+
+								<div class="imageOverlay"></div>
+							</div>
+						</li>
+
+						<li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							<div class="item">
+								<img src="images/portfolio/thumbnails/todoList_Cropped.png" />
+
+								<div class="icons">
+									<a href="images/portfolio/todoList.png" title="View image" class="openButton" data-fancybox data-caption="This is a coding challenge I did (and played around with React)">
+										<i class="fa fa-search"></i>
+									</a>
+									<a href="" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+								<div class="imageOverlay"></div>
+							</div>
+						</li>
+
+						<li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							<div class="item">
+								<img src="images/portfolio/thumbnails/todoList_Cropped.png" />
+
+								<div class="icons">
+									<a href="images/portfolio/todoList.png" title="View image" class="openButton" data-fancybox data-caption="This is a coding challenge I did (and played around with React)">
+										<i class="fa fa-search"></i>
+									</a>
+									<a href="" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+								<div class="imageOverlay"></div>
+							</div>
+						</li>
+
+						<li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							<div class="item">
+								<img src="images/portfolio/thumbnails/todoList_Cropped.png" />
+
+								<div class="icons">
+									<a href="images/portfolio/todoList.png" title="View image" class="openButton" data-fancybox data-caption="This is a coding challenge I did (and played around with React)">
+										<i class="fa fa-search"></i>
+									</a>
+									<a href="" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+								<div class="imageOverlay"></div>
+							</div>
+						</li>
+
+						<li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							<div class="item">
+								<img src="images/portfolio/thumbnails/todoList_Cropped.png" />
+
+								<div class="icons">
+									<a href="images/portfolio/todoList.png" title="View image" class="openButton" data-fancybox data-caption="This is a coding challenge I did (and played around with React)">
+										<i class="fa fa-search"></i>
+									</a>
+									<a href="" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+								<div class="imageOverlay"></div>
+							</div>
+						</li>
+
+						<li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							<div class="item">
+								<img src="images/portfolio/thumbnails/todoList_Cropped.png" />
+
+								<div class="icons">
+									<a href="images/portfolio/todoList.png" title="View image" class="openButton" data-fancybox data-caption="This is a coding challenge I did (and played around with React)">
+										<i class="fa fa-search"></i>
+									</a>
+									<a href="" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+								<div class="imageOverlay"></div>
+							</div>
+						</li>
+
+						<li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							<div class="item">
+								<img src="images/portfolio/thumbnails/todoList_Cropped.png" />
+
+								<div class="icons">
+									<a href="images/portfolio/todoList.png" title="View image" class="openButton" data-fancybox data-caption="This is a coding challenge I did (and played around with React)">
+										<i class="fa fa-search"></i>
+									</a>
+									<a href="" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+								<div class="imageOverlay"></div>
+							</div>
+						</li>
+
+						<li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							<div class="item">
+								<img src="images/portfolio/thumbnails/todoList_Cropped.png" />
+
+								<div class="icons">
+									<a href="images/portfolio/todoList.png" title="View image" class="openButton" data-fancybox data-caption="This is a coding challenge I did (and played around with React)">
+										<i class="fa fa-search"></i>
+									</a>
+									<a href="" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+								<div class="imageOverlay"></div>
+							</div>
+						</li>
+
+						<li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							<div class="item">
+								<img src="images/portfolio/thumbnails/todoList_Cropped.png" />
+
+								<div class="icons">
+									<a href="images/portfolio/todoList.png" title="View image" class="openButton" data-fancybox data-caption="This is a coding challenge I did (and played around with React)">
+										<i class="fa fa-search"></i>
+									</a>
+									<a href="" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+								<div class="imageOverlay"></div>
+							</div>
+						</li>
+
+						<li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							<div class="item">
+								<img src="images/portfolio/thumbnails/todoList_Cropped.png" />
+
+								<div class="icons">
+									<a href="images/portfolio/todoList.png" title="View image" class="openButton" data-fancybox data-caption="This is a coding challenge I did (and played around with React)">
+										<i class="fa fa-search"></i>
+									</a>
+									<a href="" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+								<div class="imageOverlay"></div>
+							</div>
+						</li>
+
+						<li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							<div class="item">
+								<img src="images/portfolio/thumbnails/todoList_Cropped.png" />
+
+								<div class="icons">
+									<a href="images/portfolio/todoList.png" title="View image" class="openButton" data-fancybox data-caption="This is a coding challenge I did (and played around with React)">
+										<i class="fa fa-search"></i>
+									</a>
+									<a href="" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+								<div class="imageOverlay"></div>
+							</div>
+						</li>
+
 					</ul>
 				</div>
-				
-			</div>		
+
+			</div>
 		</div>
-		
-		
+
+
 	</div>
 
 	<script src="js/jquery.superslides.min.js"></script>
@@ -243,5 +433,6 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 </body>
 </html>
