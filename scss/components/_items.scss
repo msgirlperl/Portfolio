@@ -4,11 +4,28 @@
 
 .items {
 
+  padding: 0;
+
   .item:hover .openButton {
     left: 0px;
   }
   .item:hover .projectLink {
     right: 0px;
+  }
+
+/* sassify this */
+  .item:hover img {
+      -webkit-transform: scale(1.05, 1.05);
+      -moz-transform: scale(1.05, 1.05);
+      -o-transform: scale(1.05, 1.05);
+      -ms-transform: scale(1.05, 1.05);
+      -transform: scale(1.05, 1.05);
+
+      -webkit-transition: all 0.2s linear, 1s;
+      -moz-transition: all 0.2s linear, 1s;
+      -o-transition: all 0.2s linear, 1s;
+      -ms-transition: all 0.2s linear, 1s;
+      -transition: all 0.2s linear, 1s;
   }
 
   li {
@@ -27,6 +44,12 @@
     background-color: $salmon;
     position: relative;
     display: inline-block;
+
+    -webkit-transition: all 0.2s linear, 0.4s;
+    -moz-transition: all 0.2s linear, 0.4s;
+    -o-transition: all 0.2s linear, 0.4s;
+    -ms-transition: all 0.2s linear, 0.4s;
+    -transition: all 0.2s linear, 0.4s;
   }
 
   .item {
@@ -41,7 +64,7 @@
 
     .projectLink {
       float: right;
-      right: -200px;      
+      right: -200px;
     }
   }
 
