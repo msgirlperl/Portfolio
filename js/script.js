@@ -16,7 +16,6 @@ $(document).ready(function() {
 			}
 		);
 
-
 	$('.owl-carousel').owlCarousel({
 	    loop:true,
 	    items: 4,
@@ -55,9 +54,7 @@ $(document).ready(function() {
 	            	$(this.el).find('.percent').text(Math.round(percent));
     			}
    			 });
-
 		}
-
 
 		if (!countupFinished && window.pageYOffset > statsTopOffset - $(window).height() + 200) {
 
@@ -100,5 +97,32 @@ $(document).ready(function() {
 
 		return false
 	});
+
+	$("#navigation li a").click(function(e) {
+			e.preventDefault();
+
+			let targetElement = $(this).attr("href");
+			let targetPosition = $(targetElement).offset().top;
+			$("html, body").animate({ scrollTop: targetPosition  - 50 }, "slow");
+
+
+	});
+
+	const stickyNavigation = () => {
+
+		let body = $("body");
+		if($(window).scrollTop() >= navTop) {
+			body.css("padding-top", nav.outerHeight() + "px");
+			body.addClass("fixedNav");
+		} else {
+			body.css("padding-top", 0);
+			body.removeClass("fixedNav");
+		}
+	};
+
+	const nav = $("#navigation");
+	const navTop = nav.offset().top;
+
+	$(window).on("scroll", stickyNavigation);
 
 });

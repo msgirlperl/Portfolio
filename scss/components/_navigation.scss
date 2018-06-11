@@ -1,0 +1,28 @@
+#navigation {
+  background-color: $salmon;
+  padding: 20px 10px;
+  z-index: 100;
+  width:100%;
+
+  li {
+    padding: 0 10px;
+
+    a {
+      color:#fff;
+    }
+  }
+}
+
+.navbar-brand, .navbar-brand:hover {
+  color: #fff;
+}
+
+.navbar-toggler-icon {
+  background: url(../images/icons/icons8-menu-50.png);
+  background-size: 100%;
+}
+
+.fixedNav #navigation {
+  position: fixed;
+  top: 0;
+}
