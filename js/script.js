@@ -1,6 +1,6 @@
 $(window).on('load', function() {
-  $('.loader .inner').fadeOut(500, function() {
-    $('.loader').fadeOut(750);
+  $('.loader .inner').fadeOut(750, function() {
+    $('.loader').fadeOut(1000);
   });
 });
 
@@ -12,7 +12,7 @@ $(document).ready(function() {
   });
 
   var typed = new Typed('.typed', {
-    strings: ['Software Engineer.', 'Web Developer.', 'Student.'],
+    strings: ['Software Engineer.', 'Web Developer.', 'UI/UX Enthusiast.'],
     typeSpeed: 70,
     loop: true,
     startDelay: 1000,
@@ -38,10 +38,11 @@ $(document).ready(function() {
     }
   });
 
-  var skillsTopOffset = $('.skillsSection').offset().top;
-  var statsTopOffset = $('.statsSection').offset().top;
-  var countUpFinished = false;
-  $(window).scroll(function() {
+  let skillsTopOffset = $('.skillsSection').offset().top;
+  let statsTopOffset = $('.statsSection').offset().top;
+  let countupFinished = false;
+
+  $(window).scroll(() => {
     if (window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
       $('.chart').easyPieChart({
         easing: 'easeInOut',
@@ -59,17 +60,17 @@ $(document).ready(function() {
     }
 
     if (
-      !countUpFinished &&
+      !countupFinished &&
       window.pageYOffset > statsTopOffset - $(window).height() + 200
     ) {
       $('.counter').each(function() {
-        var element = $(this);
-        var endVal = parseInt(element.text());
+        let element = $(this);
+        let endVal = parseInt(element.text());
 
         element.countup(endVal);
       });
 
-      countUpFinished = true;
+      countupFinished = true;
     }
   });
 
@@ -88,7 +89,7 @@ $(document).ready(function() {
     $('#filters .current').removeClass('current');
     $(this).addClass('current');
 
-    var selector = $(this).attr('data-filter');
+    const selector = $(this).attr('data-filter');
 
     $('.items').isotope({
       filter: selector,
@@ -105,19 +106,13 @@ $(document).ready(function() {
   $('#navigation li a').click(function(e) {
     e.preventDefault();
 
-    var targetElement = $(this).attr('href');
-    var targetPosition = $(targetElement).offset().top;
+    let targetElement = $(this).attr('href');
+    let targetPosition = $(targetElement).offset().top;
     $('html, body').animate({ scrollTop: targetPosition - 50 }, 'slow');
   });
 
-  const nav = $('#navigation');
-  const navTop = nav.offset().top;
-
-  $(window).on('scroll', stickyNavigation);
-
-  function stickyNavigation() {
-    var body = $('body');
-
+  const stickyNavigation = () => {
+    let body = $('body');
     if ($(window).scrollTop() >= navTop) {
       body.css('padding-top', nav.outerHeight() + 'px');
       body.addClass('fixedNav');
@@ -125,5 +120,10 @@ $(document).ready(function() {
       body.css('padding-top', 0);
       body.removeClass('fixedNav');
     }
-  }
+  };
+
+  const nav = $('#navigation');
+  const navTop = nav.offset().top;
+
+  $(window).on('scroll', stickyNavigation);
 });
