@@ -1,27 +1,25 @@
 .slides-navigation {
-    margin: 0 auto;
-    position: absolute;
-    z-index: 6;
-    top: 46%;
-    width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 6;
+  top: 46%;
+  width: 100%;
 
-    .prev, .next {
-    	width: 47px;
-		height:47px;
-		background-size: cover;
-		background-repeat: no-repeat;
-    }
+  .prev,
+  .next {
+    width: 47px;
+    height: 47px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
-	a.prev {
-		left:20px;
-		background-image: url(../images/icons/back.png);
-	}
+  a.prev {
+    left: 20px;
+    background-image: url(../images/icons/prev.png);
+  }
 
-	a.next {
-		right:20px;
-		background-image: url(../images/icons/next2.png);	
-	}
-
+  a.next {
+    right: 20px;
+    background-image: url(../images/icons/next.png);
+  }
 }
-
-
