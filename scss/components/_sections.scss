@@ -1,26 +1,26 @@
-
 .section {
-	padding: 100px 0;
+  padding: 100px 0;
 
-	.heading {
-		text-align:center;
-		padding-bottom: 40px;
-		width: 100%;
-	}
+  .heading {
+    text-align: center;
+    padding-bottom: 40px;
+    width: 100%;
+  }
 }
 
 .aboutImage {
-    max-width: 100%;	
+  max-width: 100%;
+  border: 2px solid transparent;
+  border-radius: 49.9%;
 }
 
 .skillsSection,
 .contactSection {
-	background-color: $salmon; 
-	color:#fff;
+  background-color: $salmon;
+  color: #fff;
 }
 
 .skill {
-	text-align:center;
-	margin-left: 10px;
+  text-align: center;
+  margin-left: 10px;
 }
-
